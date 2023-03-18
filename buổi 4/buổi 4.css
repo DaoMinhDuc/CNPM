@@ -1,0 +1,227 @@
+    .header {
+        font-family: 'Times New Roman', Times, serif;
+        background-color: #D3D3D3;
+        height: 90px;
+        font-size: 14;
+    }
+    
+    .floatleft {
+        float: left;
+        width: 50%;
+    }
+    
+    .floatleft div {
+        background-color: aqua;
+        font-size: 15px;
+        margin: 15px 15px 15px 15px;
+    }
+    
+    .floatright {
+        float: right;
+        width: 50%;
+    }
+    
+    .floatright div {
+        background-color: white;
+        font-size: 15px;
+        margin: 15px 15px 15px 15px;
+    }
+    
+    .footer {
+        clear: left;
+        background-color: #D3D3D3;
+        height: 90px;
+        margin: 15px 15px 15px 15px;
+    }
+    
+    .header2 {
+        background-color: aqua;
+        height: 90px;
+        margin: 15px 15px 15px 15px;
+    }
+    
+    .maincontent {
+        float: left;
+        width: 57%;
+        height: 100px;
+        margin: 10px 10px 10px 10px;
+        background-color: green;
+    }
+    
+    .sidebar {
+        float: right;
+        width: 37%;
+        height: 100px;
+        margin: 10px 10px 10px 10px;
+        background-color: purple;
+    }
+    
+    .twin1 {
+        float: left;
+        width: 45%;
+        height: 100px;
+        margin: 10px 10px 10px 10px;
+        background-color: orange;
+    }
+    
+    .twin2 {
+        float: right;
+        width: 45%;
+        height: 100px;
+        margin: 10px 10px 10px 10px;
+        background-color: orange;
+    }
+    
+    .footer {
+        background-color: aqua;
+        height: 90px;
+        margin: 15px 15px 15px 15px;
+    }
+    
+    .background {
+        background-color: black;
+        width: 600px;
+        height: 440px;
+    }
+    
+    .green1 {
+        background-color: greenyellow;
+        height: 400px;
+        float: left;
+        width: 20%;
+        margin: 10px 10px 10px 10px;
+    }
+    
+    .green2 {
+        background-color: greenyellow;
+        float: left;
+        height: 120px;
+        width: 280px;
+        margin: 10px 10px 10px 10px;
+    }
+    
+    .red1 {
+        background-color: rgb(255, 47, 47);
+        height: 120px;
+        float: right;
+        width: 130px;
+        margin: 10px 20px 10px 0px;
+    }
+    
+    .orange1 {
+        background-color: rgb(255, 147, 47);
+        height: 120px;
+        float: left;
+        width: 130px;
+        margin: 10px 10px 10px 10px;
+    }
+    
+    .red2 {
+        background-color: rgb(255, 47, 47);
+        height: 120px;
+        float: left;
+        width: 130px;
+        margin: 10px 10px 10px 10px;
+    }
+    
+    .red3 {
+        background-color: rgb(255, 47, 47);
+        height: 120px;
+        float: left;
+        width: 130px;
+        margin: 10px 10px 10px 10px;
+    }
+    
+    .orange2 {
+        background-color: rgb(255, 147, 47);
+        height: 120px;
+        float: left;
+        width: 130px;
+        margin: 10px 10px 10px 10px;
+    }
+    
+    .green3 {
+        background-color: greenyellow;
+        height: 260px;
+        float: right;
+        width: 130px;
+        margin: 10px 20px 10px 0px;
+    }
+    /* .flex-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 440px;
+        background-color: rgb(128, 128, 128);
+    }
+    
+    .box1 {
+        background-color: #dd8e8e;
+        order: 2;
+        width: 40%;
+        flex-basis: 100%;
+    }
+    
+    .box2 {
+        background-color: #15c515;
+        order: 1;
+        flex-basis: 60%;
+        width: 40%
+    }
+    
+    .box3 {
+        background-color: #ca8484;
+        order: 2;
+    }
+    
+    .box4a {
+        background-color: #33759b;
+        order: 3;
+    }
+    
+    .box4b {
+        background-color: #33759b;
+        order: 4;
+    } */
+    
+    .grid-container {
+        display: grid;
+        grid-template-columns: 20% 60% 20%;
+        grid-template-rows: 100px 100px 100px 100px;
+        grid-gap: 10px;
+        background-color: #2196F3;
+        padding: 10px 10px 10px 10px;
+        width: 1200px;
+    }
+    
+    .grid-container div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding: 20px;
+        font-size: 30px;
+    }
+    
+    .grid-item1 {
+        grid-column: 1/4;
+        grid-row: span 1;
+    }
+    
+    .grid-item2 {
+        grid-column: span 1;
+        grid-row: span 3;
+    }
+    
+    .grid-item3 {
+        grid-column: 2/3;
+        grid-row: span 3;
+    }
+    
+    .grid-item4 {
+        grid-column: 3/4;
+        grid-row: span 3;
+    }
+    
+    .grid-item5 {
+        grid-column: 1/4;
+        grid-row: span 1;
+    }

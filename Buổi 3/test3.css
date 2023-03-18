@@ -1,0 +1,50 @@
+.logo-web img {
+    height: 100px;
+    max-width: 110px;
+}
+
+.menu-pc {
+    text-align: center;
+    max-width: 960px;
+    margin: 0px auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: left;
+}
+
+.menu-pc li a {
+    display: inline-block;
+    background-color: white;
+    padding: 18px 20px;
+    text-decoration: none;
+    color: #1b3268;
+    font-size: 18px;
+    font-family: 'Bold';
+}
+
+.submenu {
+    display: none;
+}
+
+.menu-pc>ul {
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+
+/* .section_1 {
+    padding: 50px 0px;
+    padding-bottom: 0px;
+}
+
+.box_section_1 {
+    background: url("../images/bg_xemthem.png") no-repeat;
+    height: 50px;
+    width: 522px;
+    max-width: 100%;
+    text-align: center;
+    margin: 0px auto;
+    background-size: 100% 100%;
+} */

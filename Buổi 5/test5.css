@@ -1,0 +1,102 @@
+.wrapper {
+    width: 960px;
+    margin: 0px auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+#logo img {
+    display: flex;
+    max-width: 120px;
+    height: auto;
+    padding-left: 30px;
+}
+
+#main-menu {
+    display: flex;
+}
+
+#main-menu>div {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+.searhbox {
+    border: 1px solid #ccc;
+    font-size: 12px;
+    height: 30px;
+    padding: 4px 8px;
+    position: absolute;
+    width: 50%;
+}
+
+.login {}
+
+.signup {}
+
+.center {
+    width: 960px;
+    height: 500px;
+    background-image: url('B:/Bài tập/Buổi 5/img/cover.jpg');
+    background-position: bottom;
+    background-size: cover;
+}
+
+.part-center {
+    width: 300px;
+    color: #ccc;
+    padding: 40px 0px 0px 40px;
+}
+
+.searhbox2 {
+    padding-left: 0px;
+}
+
+.part3 {
+    display: grid;
+    grid-template-columns: 6;
+    grid-template-rows: 3;
+}
+
+.item1 {
+    grid-column: 1/span 2;
+    grid-row: 1/span 2;
+    background-color: #ccc;
+    text-size-adjust: 14px;
+    height: 250px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.part2 {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    grid-column: 3/span 4;
+    grid-row: 1/span 1;
+}
+
+.course {
+    grid-column: 3/span 4;
+    grid-row: 2/span 2;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    text-align: center;
+}
+
+.part4 ul {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+.part4 ul li {
+    margin: 10px;
+}
