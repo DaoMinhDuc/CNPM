@@ -1,0 +1,62 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f5f5f5;
+    position: fixed;
+    /* Set the navbar to fixed position */
+    top: 0;
+    /* Position the navbar at the top of the page */
+    width: 100%;
+    /* Full width */
+}
+
+.logo img {
+    width: 50px;
+    /* Adjust the width as needed */
+}
+
+.search {
+    flex-grow: 1;
+    margin: 0 10px;
+    max-width: 400px;
+    /* Adjust the max-width as needed */
+}
+
+.search input {
+    flex-grow: 1;
+    padding: 10px;
+    width: 200px;
+}
+
+.search button {
+    background: none;
+    border: none;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.cart img {
+    width: 50px;
+}
+
+.sign-up {
+    display: flex;
+}
+
+.sign-in {
+    background-color: #509dd1;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 120px;
+    margin-left: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.sign-in:hover {
+    opacity: 0.8;
+}

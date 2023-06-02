@@ -1,0 +1,37 @@
+    .cart {
+        border: 3px solid #f1f1f1;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        margin: 100px 100px 0 100px;
+    }
+    
+    li {
+        display: flex;
+        align-items: center;
+        border: 1px solid black;
+        margin: 20px;
+        font-size: 18px;
+    }
+    
+    .cart-avatar {
+        width: 25%;
+        height: fit-content;
+        margin-right: 20px;
+    }
+    
+    .name-cart {
+        width: 40%;
+    }
+    
+    .cart-price {
+        width: 20%;
+    }
+    
+    .cart-button {
+        width: 8%;
+        margin: 15px 30px;
+    }
+    
+    .borrow-button {
+        width: 25%;
+        margin-left: 400px;
+    }
