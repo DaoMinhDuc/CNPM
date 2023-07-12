@@ -1,0 +1,63 @@
+.BorrowDetail {
+    display: flex;
+    max-width: 1440px;
+    margin-left: 200px;
+}
+
+.info-form {
+    width: 30%;
+    margin: 100px 0px 0 50px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    height: fit-content;
+}
+
+.info-book {
+    width: 70%;
+    margin: 100px 0px 0 50px;
+    padding: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.info-book h2,
+h3,
+p {
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    margin: 20px;
+    font-size: 18px;
+    height: fit-content;
+    padding: 15px;
+}
+
+.cart-avatar {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 40%;
+    height: fit-content;
+    margin-right: 20px;
+}
+
+.name-cart {
+    width: 40%;
+}
+
+.cart-price {
+    width: 20%;
+}
+
+.info-form h2 {
+    font-size: 28px;
+    text-align: center;
+}
+
+.info-book h2 {
+    font-size: 28px;
+    text-align: center;
+}

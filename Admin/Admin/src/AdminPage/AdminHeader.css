@@ -1,0 +1,96 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f5f5f5;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.logo {
+    width: 300px;
+    align-items: center;
+}
+
+.logo h3 {
+    margin-left: 50px;
+}
+
+.sign-up {
+    display: flex;
+    margin-left: 800px;
+}
+
+.sign-in {
+    background-color: #509dd1;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 120px;
+    margin-left: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.sign-in:hover {
+    opacity: 0.8;
+}
+
+.dropbtn {
+    background-color: #509dd1;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    width: 120px;
+    margin-left: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.dropdown {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.dropdown p {
+    margin-left: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    z-index: 1;
+    top: 100%;
+}
+
+.dropdown-content button {
+    background-color: #5c666d;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.dropdown-content button:hover {
+    background-color: rgb(50, 54, 58);
+}
+
+
+/* Show the dropdown menu on hover */
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #2d0688;
+}
