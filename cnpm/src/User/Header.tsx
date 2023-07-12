@@ -1,40 +1,64 @@
-// import { useEffect, useRef, useState } from 'react'
-// import { useNavigate } from 'react-router-dom';
-import "./Header.css";
 import { Link } from 'react-router-dom';
-// import { getProfiles } from './userSlice';
-import { useSelector} from "react-redux";
-import {RootState} from "../store";
+import { useSelector } from 'react-redux';
+import { RootState } from '../store';
+import IconButton from '@mui/material/IconButton';
+import StyledBadge from '@mui/material/Badge';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import {Avatar} from '@mui/material';
+import './Header.css';
 
-function Header() {
-    const user = useSelector((store: RootState) => store.user);
-    // const dispatch = useDispatch();
-    
-    // useEffect(() => {
-    //   dispatch(getProfiles());
-    // }, [dispatch]);
-  
-    return(
-      <div>
+interface HeaderProps {
+  badgeCount: number;
+  addToCart: (item: any) => void;
+}
+
+function Header({ badgeCount, addToCart }: HeaderProps) {
+  const user = useSelector((store: RootState) => store.user);
+
+  const handleReloadPage = () => {
+    window.location.reload();
+  };
+
+  return (
+    <div>
       <div className="header">
-      
         <div className="logo">
-        <Link to="/"><img src="" alt="logo" /></Link>
+          <Link to="/">
+            <h3>Thư Viện</h3>
+          </Link>
         </div>
-        <div className="search">
-          <input type="text" placeholder="Tìm kiếm ..." />
-          <img src="" alt="search" />
+        <div>
+          <Link to="/cart" style={{textDecoration:'none'}}>
+              <IconButton aria-label="cart" >
+                <StyledBadge badgeContent={badgeCount} color="secondary" >
+                  <ShoppingCartIcon />
+                </StyledBadge>
+              </IconButton>
+               Giỏ hàng
+          </Link>
         </div>
-        <Link to="/cart">
-          <img src="" alt="giỏ hàng" />
-        </Link>
+
         <div className="sign-up">
           {user?.username ? (
-            <span>{user.username}</span>
+            <>
+              <div className="dropdown" >
+                <Avatar src="/broken-image.jpg" />
+                <p>{user.username}</p>
+                <div className="dropdown-content">
+                 
+                    <button className="Header-button">Sửa thông tin</button>
+                
+
+                  <button className="Header-button" onClick={handleReloadPage}>
+                    Đăng xuất
+                  </button>
+                </div>
+              </div>
+            </>
           ) : (
             <>
-              <Link  to="/login">
-              <button className="sign-in">sign-in</button>
+              <Link to="/login">
+                <button className="sign-in">Đăng nhập</button>
               </Link>
             </>
           )}

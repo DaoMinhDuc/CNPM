@@ -7,25 +7,38 @@ import './App.css'
 import Book from './User/Book';
 import Cart from './User/Cart';
 import SignUp from './User/SignUp';
+import Return from "./User/Return";
+import { Feature } from "./User/Feature";
 
 
 
-
-const router = createBrowserRouter([ {
-  path: "/",
+const router = createBrowserRouter([ 
+  {
+    path: "/",
+    element: <Feature />,
+    children: [
+      {
+  path: "",
   element: <Book />,
+},
+
+{
+  path: "/cart",
+  element: <Cart />,
+},
+{
+  path: "/thetra",
+  element: <Return />,
 },
 {
   path: "/login",
   element: <Login />,
 },
 {
-  path: "/cart",
-  element: <Cart />,
-},
-{
   path: "/sign-up",
   element: <SignUp />,
+},
+],
 },
 
 ]);

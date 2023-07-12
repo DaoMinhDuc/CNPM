@@ -4,8 +4,8 @@ import { object, number, string, ObjectSchema } from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
 import axios from 'axios';
 import './SignUp.css'
-import Header from './Header';
 import { Link } from 'react-router-dom';
+import { Box, TextField, Button } from '@mui/material';
 
 interface Profile {
   name: string;
@@ -53,41 +53,78 @@ const SignUp: React.FC = () => {
 
   return (
     <>
-    <Header />
+    
+    <Box
+  component="form"
+  className="form-signup"
+  noValidate
+  autoComplete="off"
+  onSubmit={handleSubmit(onSubmit)}
+>
+  <h1>Đăng kí thành viên</h1>
 
-    <form onSubmit={handleSubmit(onSubmit)}>
-      <p>Tên</p>
-      <input {...register('name')} />
-      {errors.name && <p>{errors.name.message}</p>}
+  <div className="form-group">
+    <TextField
+      required
+      label="Tên"
+      {...register('name')}
+    />
+    {errors.name && <p>{errors.name.message}</p>}
+  </div>
 
-      <p>Tuổi</p>
-      <input type="number" {...register('age')} />
-      {errors.age && <p>{errors.age.message}</p>}
+  <div className="form-group">
+    <TextField
+      required
+      type="number"
+      label="Tuổi"
+      {...register('age')}
+    />
+    {errors.age && <p>{errors.age.message}</p>}
+  </div>
 
-      <p>Giới tính</p>
-      <select {...register('gender')}>
-        <option value="female">Nữ</option>
-        <option value="male">Nam</option>
-        <option value="other">Khác</option>
-      </select>
-      {errors.gender && <p>{errors.gender.message}</p>}
+  <div className="form-group">
+    <TextField
+      select
+      label="Giới tính"
+      {...register('gender')}
+    >
+      <option value="female">Nữ</option>
+      <option value="male">Nam</option>
+      <option value="other">Khác</option>
+    </TextField>
+    {errors.gender && <p>{errors.gender.message}</p>}
+  </div>
 
-      <p>Địa chỉ</p>
-      <input {...register('address')} />
-      {errors.address && <p>{errors.address.message}</p>}
+  <div className="form-group">
+    <TextField
+      label="Địa chỉ"
+      {...register('address')}
+    />
+    {errors.address && <p>{errors.address.message}</p>}
+  </div>
 
-      <p>Tên đăng nhập</p>
-      <input {...register('username')} />
-      {errors.username && <p>{errors.username.message}</p>}
+  <div className="form-group">
+    <TextField
+      label="Tên đăng nhập"
+      {...register('username')}
+    />
+    {errors.username && <p>{errors.username.message}</p>}
+  </div>
 
-      <p>Mật khẩu</p>
-      <input {...register('password')} />
-      {errors.password && <p>{errors.password.message}</p>}
+  <div className="form-group">
+    <TextField
+      type="password"
+      label="Mật khẩu"
+      {...register('password')}
+    />
+    {errors.password && <p>{errors.password.message}</p>}
+  </div>
 
-      <Link to="/login">
-  <button className="SignUp" type="submit">Đăng kí</button>
-</Link>
-    </form>
+  <Link to="/login">
+    <Button className="SignUp" type="submit">Đăng kí</Button>
+  </Link>
+</Box>
+
     </>
   );
 };
